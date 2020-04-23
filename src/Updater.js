@@ -39,7 +39,7 @@ export default new (class Updater {
         )),
       )
 
-      const latestVersion = this.getLatestTag('https://github.com/pct-org/pop-api-scraper.git')
+      const latestVersion = this.getLatestTag(url)
 
       if (semverMax(version, latestVersion) !== version) {
         this.log(`'${version}' is no longer the latest version, updating to '${latestVersion}'`)
