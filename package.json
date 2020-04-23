@@ -1,6 +1,6 @@
 {
   "name": "@pct-org/updater",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Updater of PCT environment",
   "repository": {
     "type": "git",
@@ -21,6 +21,13 @@
     "pretest": "npm run build",
     "test": "echo 'RUN TESTS'",
     "test:watch": "echo 'RUN TESTS'"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "node-cron": "^2.0.3",
+    "semver-max": "^1.0.0",
+    "shelljs": "^0.8.3"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
@@ -52,12 +59,5 @@
   },
   "engines": {
     "node": ">=7.10.1"
-  },
-  "dependencies": {
-    "debug": "^4.1.1",
-    "dotenv": "^8.2.0",
-    "node-cron": "^2.0.3",
-    "semver-max": "^1.0.0",
-    "shelljs": "^0.8.3"
   }
 }
