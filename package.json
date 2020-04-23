@@ -1,6 +1,6 @@
 {
   "name": "@pct-org/updater",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Updater of PCT environment",
   "repository": {
     "type": "git",
