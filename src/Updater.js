@@ -3,10 +3,11 @@ import fs from 'fs'
 import path from 'path'
 import { exec, cd } from 'shelljs'
 import semverMax from 'semver-max'
+import { parseExpression } from 'cron-parser'
 
 import { name } from '../package.json'
 
-const { PROJECT_LOCATION } = process.env
+const { PROJECT_LOCATION, CRON_TIME } = process.env
 
 export default new (class Updater {
 
@@ -77,7 +78,9 @@ export default new (class Updater {
         }
 
       } else {
-        this.log(`'${version}' is still the latest version`)
+        const nextUpdate = parseExpression(CRON_TIME, {}).next().toString()
+
+        this.log(`'${version}' is still the latest version, next update at '${nextUpdate}'`)
       }
     } catch (e) {
       this.log(`Error: ${e.message || e}`)
