@@ -1,4 +1,13 @@
-# 1.1.0 (2020-04-23)
+# [1.2.0](https://github.com/pct-org/updater/compare/v1.1.0...v1.2.0) (2020-05-04)
+
+
+### Features
+
+* Added next update to the log ([5bfeaed](https://github.com/pct-org/updater/commit/5bfeaed968ab5b37674bce5750b288d46f6e3597))
+
+
+
+# [1.1.0](https://github.com/pct-org/updater/compare/7532534e200b453bb80ab375c8571dc85fc63cd1...v1.1.0) (2020-04-23)
 
 
 ### Bug Fixes
