@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/pct-org/updater/compare/v1.2.0...v1.2.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* Fixed that the tags where wrongly sorted ([67fef19](https://github.com/pct-org/updater/commit/67fef1933df17462a1dc69a012a38991b2ab464b))
+
+
+
 # [1.2.0](https://github.com/pct-org/updater/compare/v1.1.0...v1.2.0) (2020-05-04)
 
 
