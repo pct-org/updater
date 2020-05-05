@@ -26,7 +26,7 @@ export default new (class Updater {
    * @returns {string}
    */
   getLatestTag = (repoUrl) => {
-    return exec(`git ls-remote --tags ${repoUrl} | cut -d/ -f3- | sort -t. -nk1,2 -k3 | awk '/^[^{]*$/{version=$1}END{print version}'`)
+    return exec(`git ls-remote --tags ${repoUrl} | cut -d/ -f3- | awk '/^[^{]*$/{version=$1}END{print version}'`)
       .toString()
       .trim()
   }
