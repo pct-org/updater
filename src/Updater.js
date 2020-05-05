@@ -26,7 +26,7 @@ export default new (class Updater {
    * @returns {string}
    */
   getLatestTag = (repoUrl) => {
-    return exec(`git ls-remote --tags ${repoUrl} | cut -d/ -f3- | sort -t. -nk1,2 -k3 | awk '/^[^{]*$/{version=$1}END{print version}'`)
+    return exec(`git ls-remote --tags ${repoUrl} | cut -d/ -f3- | awk '/^[^{]*$/{version=$1}END{print version}'`)
       .toString()
       .trim()
   }
@@ -46,7 +46,7 @@ export default new (class Updater {
 
       this.log(`Got version "${latestVersion}" from "${url}"`)
 
-      if (semverMax(version, latestVersion) !== version) {
+      if (semverMax(version, latestVersion) !== version && false) {
         this.log(`'${version}' is no longer the latest version, updating to '${latestVersion}'`)
 
         this.log(`Pulling changes from '${latestVersion}'`)
