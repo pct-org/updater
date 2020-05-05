@@ -46,7 +46,7 @@ export default new (class Updater {
 
       this.log(`Got version "${latestVersion}" from "${url}"`)
 
-      if (semverMax(version, latestVersion) !== version && false) {
+      if (semverMax(version, latestVersion) !== version) {
         this.log(`'${version}' is no longer the latest version, updating to '${latestVersion}'`)
 
         this.log(`Pulling changes from '${latestVersion}'`)
