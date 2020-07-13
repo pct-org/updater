@@ -55,7 +55,7 @@
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "rollup-plugin-uglify": "6.0.4",
-    "standard-version": "7.1.0",
+    "standard-version": "8.0.1",
     "uglify-es": "^3.3.4"
   },
   "engines": {
